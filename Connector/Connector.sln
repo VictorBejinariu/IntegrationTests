@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector", "Connector\Connector.csproj", "{D238103F-2AC0-4FAD-B13C-A2002A804FAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connector.Int.Tests", "Connector.Int.Tests\Connector.Int.Tests.csproj", "{75E14199-B31C-4229-BC19-0C97A88D3ACB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{D238103F-2AC0-4FAD-B13C-A2002A804FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D238103F-2AC0-4FAD-B13C-A2002A804FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D238103F-2AC0-4FAD-B13C-A2002A804FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75E14199-B31C-4229-BC19-0C97A88D3ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75E14199-B31C-4229-BC19-0C97A88D3ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75E14199-B31C-4229-BC19-0C97A88D3ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75E14199-B31C-4229-BC19-0C97A88D3ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
