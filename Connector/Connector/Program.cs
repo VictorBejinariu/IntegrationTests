@@ -1,6 +1,11 @@
+using Connector.Interfaces;
+using Connector.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var services = builder.Services;
+services.AddSingleton<IPaymentService, PaymentService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
