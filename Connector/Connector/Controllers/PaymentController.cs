@@ -19,7 +19,12 @@ public class PaymentController : ControllerBase
     public async Task<IActionResult> CreatePayment(PaymentCreate payment)
     {
         var result = await _paymentService.Create(payment);
-                
+
+        if (!result.IsSuccess)
+        {
+            return BadRequest(result);
+        }
+        
         return Ok(result);
     }
 

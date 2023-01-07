@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Logging;
 
-namespace Connector.Int.Tests;
+namespace Connector.Int.Tests.Utils;
 
 public class ConnectorApiFactory :WebApplicationFactory<IApiMarker>
 {
@@ -12,5 +12,6 @@ public class ConnectorApiFactory :WebApplicationFactory<IApiMarker>
         {
             logging.ClearProviders();
         });
+        
     }
 }

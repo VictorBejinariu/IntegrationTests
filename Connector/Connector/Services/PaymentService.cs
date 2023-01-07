@@ -26,6 +26,7 @@ public class PaymentService:IPaymentService
     public async Task<PaymentCreated> Create(PaymentCreate paymentRequest)
     {
         var result = new PaymentCreated();
+        result.IsSuccess = true;
         
         var errors = _validator.Validate(paymentRequest);
         if (errors.Any())
@@ -33,6 +34,8 @@ public class PaymentService:IPaymentService
             var reportedError = errors.First();
             result.ErrorCode = reportedError.ErrorCode;
             result.ErrorMessage = reportedError.ErrorMessage;
+            result.IsSuccess = false;
+            return result;
         }
 
         var payment = _builder.BuildFrm(paymentRequest);
@@ -41,9 +44,9 @@ public class PaymentService:IPaymentService
         {
             result.ErrorCode = Constants.GenericErrorCode;
             result.ErrorMessage = Constants.GenericErrorMessage;
+            result.IsSuccess = false;
             return result;
         }
-
         //do more
         return result;
     }
