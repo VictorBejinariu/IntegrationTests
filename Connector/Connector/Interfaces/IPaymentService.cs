@@ -4,5 +4,5 @@ namespace Connector.Interfaces;
 
 public interface IPaymentService
 {
-    PaymentCreated Create(PaymentCreate paymentRequest);
+    Task<PaymentCreated> Create(PaymentCreate paymentRequest);
 }
