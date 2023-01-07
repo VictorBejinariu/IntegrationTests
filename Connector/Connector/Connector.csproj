@@ -13,6 +13,7 @@
     <ItemGroup>
       <Folder Include="Contracts" />
       <Folder Include="Entities" />
+      <Folder Include="Services" />
     </ItemGroup>
 
 </Project>
