@@ -5,5 +5,5 @@ namespace Connector.Interfaces;
 public interface IPaymentRepository
 {
     Task<bool> Insert(Payment payment);
-    Task<Payment> Get(string Id);
+    Task<Payment> Get(string id);
 }

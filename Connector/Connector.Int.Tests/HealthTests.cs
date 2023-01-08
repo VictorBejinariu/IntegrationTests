@@ -32,6 +32,5 @@ public class HealthTests:IClassFixture<ConnectorApiFactory>
 
         //Then
         response.StatusCode.Should().Be(HttpStatusCode.OK);
-
     }
 }
