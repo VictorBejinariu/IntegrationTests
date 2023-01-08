@@ -27,6 +27,8 @@ public class PaymentService:IPaymentService
     {
         var result = new PaymentCreated();
         result.IsSuccess = true;
+        result.MerchantId = paymentRequest.MerchantId;
+        result.SiteId = paymentRequest.MerchantSiteId;
         
         var errors = _validator.Validate(paymentRequest);
         if (errors.Any())

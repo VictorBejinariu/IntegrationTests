@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "MerchantTransactionId": "SomeMerchantPaymentID",
+      "MerchantId": "SomeMerchantId",
+      "MerchantSiteId": "100000",
+      "Amount": "100",
+      "Currency": "RON",
+      "CustomerFirstName": "Victor"
+    },
+    "response": null,
+    "db": {
+      "MerchantPaymentId": "SomeMerchantPaymentID",
+      "MerchantId": "SomeMerchantId",
+      "SiteId": "100000"
+    }
+  },
+  {
+    "request": {
+      "MerchantTransactionId": "SomeMerchantPaymentID",
+      "MerchantId": "SomeMerchantId",
+      "MerchantSiteId": "100000",
+      "Amount": "BadAmount",
+      "Currency": "RON",
+      "CustomerFirstName": "Victor"
+    },
+    "response": {
+      "MerchantId": "SomeMerchantId",
+      "SiteId": "100000",
+      "ErrorCode": "1",
+      "ErrorMessage": "Invalid Request"
+    },
+    "db": null
+  }
+]
